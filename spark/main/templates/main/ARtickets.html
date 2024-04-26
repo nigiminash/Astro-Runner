@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Astro Runner - Tickets</title>
+        <meta name="description" content="An imaginary website for space train">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+            .apply {
+                width: 25%;
+                background-color: crimson;
+                border-bottom: 2px solid rgb(88, 0, 18);
+                border-right: 2px solid rgb(88, 0, 18);
+                border-radius: 16px;
+                text-align: center;
+                font-family: "Audiowide", sans-serif;
+                font-size: 2vw;
+                color: #ffffff;
+                text-decoration: none;
+                transition: width 2s, color 2s;
+                transition-timing-function: ease;
+                margin: 15px;
+            }
+
+            .apply:hover {
+                width: 95%;
+                background-color: rgb(95, 12, 28);
+            }
+            div.eintrag{
+                text-align:justify;
+                background-color: #fff;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                padding: 10px;
+                width: 90%;
+                border-bottom: 2px solid #BCC2CC;
+                border-right: 2px solid #BCC2CC;
+                border-radius: 16px;
+                font-family: "Audiowide", sans-serif;
+                color: #222427;
+                overflow: auto;
+            }
+            .clearfix::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            div.center {
+                position: absolute;
+                top: 35%;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                font-family: "Audiowide", sans-serif;
+                font-size: 7vw;
+                color: crimson;
+                text-decoration: underline;
+            }
+            div.read{
+                background-color: #ffffff;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 95%;
+            }
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+            a.b:link, a.b:visited{
+                background-color: white;
+                border-bottom: 2px solid #BCC2CC;
+                border-right: 2px solid #BCC2CC;
+                border-radius: 16px;
+                padding: 1vh 4vw;
+                text-align: center;
+                font-family: "Audiowide", sans-serif;
+                font-size: 2vw;
+                color: #222427;
+                margin-top: 30px;
+                text-decoration: none;
+            }
+            a.b:hover, a.b:active {
+              background-color: #1A1F27;
+              color: white;
+              border-bottom: 2px solid #141517;
+              border-right: 2px solid #141517;
+            }
+            table {
+              height: 8vh;
+              width: 100%;
+              list-style-type: none;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              padding: 10px;
+              background-color: #fff;
+              z-index: 2;
+              position: sticky;
+              z-index: 10;
+            }
+            input.reise{
+                background-color: #fff;
+                margin: 15px;
+                padding: 10px;
+                width: 45%;
+                border-radius: 16px;
+                font-family: "Audiowide", sans-serif;
+                color: #222427;
+                padding: 10px;
+                font-size: 1.5vw;
+            }
+            p.a {
+                font-family: "Audiowide", sans-serif;
+                color: #222427;
+                font-size: 2vw;;
+                margin: 15px;
+            }
+            img.e {
+                position: absolutes;
+                width: 10vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                margin-bottom: 15px;;
+                transition: width 2s, height 2s;
+                z-index: -2;
+            }
+            img.e:hover {
+                width: 80%;
+                height: 80%
+            }
+            .clearfix::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+    </head>
+    <body style = "background-color: #03070c">
+     <img 
+        src ="media/pictures/Zug-Vertikal.jpeg" 
+        alt = "Whoops, there're some problems" 
+        width = "100%" 
+        height = "500px"
+    >
+    <div class="center">Astro Runner</div>
+        <div class="sticky">
+            <table>
+                <tr>
+                    <th><a class="b" href = "/">Home</a></th>
+                    <th><a class="b" href = "tickets" style="text-decoration: underline #222427;">>>Tickets</a></th>
+                    <th><a class="b" href = "/news">News</a></th>
+                    <th><a class="b" href = "/about-us">About Us</a></th>
+                    <th><a class="b" href = "/career">Career</a></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p class="a" style="color: #ffffff">take a closer look👉 <img class="e" src="/media/media/Sonnennetz.jpg"></p>
+    <div class="read">
+        <input type="text" class="reise" placeholder="from:" required>
+        <input type="text" class="reise" placeholder="to:" required>
+        <input type="text" class="reise" placeholder="first name:" required>
+        <input type="text" class="reise" placeholder="last name:" required>
+        <input type="date" class="reise" required>
+        <input class="reise" type="email" placeholder="e-mail:" required>
+        <p class="a" style="font-size:1vw">Further informations about the booking will be sent to you in the upcoming 30 minutes!</p>
+        <p class="a">class 1.<input type="checkbox" style="height: 3vw; width: 3vw; margin: 15px"></p><br>
+        <input class="apply" type="submit">
+    </div>
+        <!-- <div style="padding-bottom:2000px"></div> -->
+        <script src="" async defer></script>
+    </body>
+    
+</html>
